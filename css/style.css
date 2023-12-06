@@ -37,3 +37,30 @@
     max-width: 100%; /* Max width 100% for responsive image */
     height: auto; /* Height auto for keeping the ratio */
 }
+.menu {
+    position: fixed; /* reste en place lors du défilement */
+    top: 0; /* fixe le menu en haut de la page */
+    left: 0; /* fixe le menu à gauche de la page */
+    width: 100vw; /* largeur de la fenêtre */
+    height: 100vh; /*hauteur de la fenêtre */
+    background: #fff; /* couleur de fond */
+    display: grid; /*grille (pour centrer) */
+    place-content: center; /* alignement au centre (V et H) */
+  }
+  .header__menuBtn {
+    position: relative; /* pour appliquer z-index*/
+    z-index: 10; /* pour que le bouton soit au dessus du menu */
+  }
+  .noscroll,
+  .noscroll body {
+    overflow: hidden;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: #000000;
+    box-shadow: 0 0 0.5rem #000;
+    color: #fff;
+  }
