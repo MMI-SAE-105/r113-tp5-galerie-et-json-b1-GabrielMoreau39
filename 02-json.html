@@ -29,7 +29,13 @@
          url: 'https://laravel.com/'
     }
     ],
-}"></ul>   
-
+}">
+<template x-for="dev in données">
+    <li>
+        <span x-text="obj.nom">nom</span>
+        <a :href="dev.url" x-text="dev.projet">projet</a>
+    </li>
+</template>
+</ul>   
 </body>
 </html>
