@@ -7,22 +7,27 @@
 
   <title>TP Galerie ET chargement JSON</title>
 
-  <link rel="stylesheet" href="./css/style.css">
+  <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
+  <header>
+    <button><img src="https://api.iconify.design/openmoji:home-button.svg"><a href="./index.html">Accueil du site</a></button>
+  </header>
   <h1>JSON</h1>
   <ul x-data="{
     async données() {
-        const resp = await fetch('data.json');
+        const resp = await fetch('./JSON/data.json');
         return await resp.json();
     },
-}">
-<template x-for="dev in données">
-    <li>
-        <span x-text="obj.nom">nom</span>
-        <a :href="dev.url" x-text="dev.projet">projet</a>
-    </li>
-</template>
+    }">
+    <template x-for="dev in données">
+       <li>
+          <span x-text="dev.nom">nom</span>:
+          <a :href="dev.url" x-text="dev.projet">
+            projet
+          </a>
+       </li>
+    </template>
 </ul>   
 </body>
 </html>
