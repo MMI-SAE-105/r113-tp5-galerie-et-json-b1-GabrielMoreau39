@@ -27,3 +27,9 @@
     border: 2px solid #fff;/* White border of 2px */
     border-radius: 50%;/* Rounded border */
 }
+.overlay>figure {
+    margin: 0; /* No margin */
+    padding: 1rem; /* 1rem padding */
+    border: 2px solid #fff; /* White border of 2px */
+    background-color: #000;;    
+}
