@@ -10,7 +10,26 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <h1>TP Galerie ET chargement JSON</h1>
-    <console class="table"></console>
+  <h1>JSON</h1>
+  <ul x-data="{
+    données = [
+    {
+        nom: 'Jean', 
+        projet: 'Alpine.js', 
+        url: 'https://alpine.dev/'
+       },
+    {
+        nom: 'Maxime',
+        projet: 'Tailwind CSS',
+        url: 'https://tailwindcss.com/'
+    },
+    {
+        nom: 'Adam',
+        projet: 'Laravel',
+         url: 'https://laravel.com/'
+    }
+    ],
+}"></ul>   
+
 </body>
 </html>
