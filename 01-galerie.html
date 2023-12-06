@@ -11,18 +11,29 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body x-data="{
-    nomVar: 'https://picsum.photos/id/237/400/300' ,
+    OuvreImage: 'https://picsum.photos/id/237/400/300' ,
 }">
-  <h1>Galerie</h1>
+  <header>
+    <h1>Galerie</h1>
+  </header> 
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam harum labore assumenda quam saepe necessitatibus natus sequi est, expedita architecto nemo sed amet eaque accusamus repellendus, numquam atque! Soluta, incidunt?</p>
   <img src="https://picsum.photos/id/237/60/60"
-  alt="miniaturechiot" 
-@click="nomVar = 'https://picsum.photos/id/237/400/300'">
+  alt="un chiot" 
+@click="OuvreImage = 'https://picsum.photos/id/237/400/300'">
   <img src="https://picsum.photos/id/238/60/60"
-  alt="miniaturenewyork" 
-@click="nomVar = 'https://picsum.photos/id/238/400/300'">
-<div class="overlay" x-show="nomVar" @click="nomVar = null" @keyup.escape.window="nomVar = null">
-    <figure><img src="https://picsum.photos/id/237/400/300" alt="image 238... New-York"></figure>
+  alt="New-York" 
+@click="OuvreImage = 'https://picsum.photos/id/238/400/300'">
+  <img src="https://picsum.photos/id/239/60/60"
+  alt="Pissenlit" 
+@click="OuvreImage = 'https://picsum.photos/id/239/400/300'">
+  <img src="https://picsum.photos/id/240/60/60"
+  alt="Escaliers" 
+@click="OuvreImage = 'https://picsum.photos/id/240/400/300'">
+<div class="overlay"
+    x-show="OuvreImage" 
+    @click="OuvreImage = null" 
+    @keyup.escape.window="OuvreImage = null">
+    <figure><img :src="OuvreImage"></figure>
 </div>
 </body>
 </html>
