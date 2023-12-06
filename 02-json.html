@@ -7,13 +7,15 @@
 
   <title>TP Galerie ET chargement JSON</title>
 
+  <link rel="stylesheet" href="./css/style.css">
   <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
   <header>
     <button><img src="https://api.iconify.design/openmoji:home-button.svg"><a href="./index.html">Accueil du site</a></button>
+    <h1>JSON</h1>
   </header>
-  <h1>JSON</h1>
+  
   <ul x-data="{
     async données() {
         const resp = await fetch('./JSON/data.json');
