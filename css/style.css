@@ -11,3 +11,19 @@
     display: grid; /* Use a grid for easy centering */
     place-content: center; /* Center vertically and horizontally */
 }
+.overlay::after {
+    content: "X"; /* Add content : "X" */
+    color: #fff; /* White text color */
+    background-color: #020;; /* Black background color */
+    font-family: sans-serif; /* Font family "sans-serif" */
+    text-align: center; /* Centered text */
+    line-height: 2rem; /* Line height ( idem height ) */
+    display: block; /* Display as a block */
+    position: absolute; /* Position absolute */
+    top: 1rem; /* 1rem from the top */
+    right: 1rem; /* 1rem from the right */
+    width: 2rem;/* 2rem width */
+    height: 2rem;/* 2rem height */
+    border: 2px solid #fff;/* White border of 2px */
+    border-radius: 50%;/* Rounded border */
+}
