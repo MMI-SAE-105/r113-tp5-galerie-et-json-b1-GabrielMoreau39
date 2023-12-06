@@ -17,7 +17,7 @@
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam harum labore assumenda quam saepe necessitatibus natus sequi est, expedita architecto nemo sed amet eaque accusamus repellendus, numquam atque! Soluta, incidunt?</p>
   <img src="https://picsum.photos/id/237/60/60" 
 @click="nomVar = 'https://picsum.photos/id/237/400/300'">
-<div class="overlay" x-show="nomVar" @click="nomVar">
+<div class="overlay" x-show="nomVar" @click="nomVar = null" @keyup.escape.window="nomVar = null">
     <figure><img src="nomVar" alt="image 237... un chiot"></figure>
 </div>
 </body>
